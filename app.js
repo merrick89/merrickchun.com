@@ -54,12 +54,12 @@
     });
 
     app.controller('designController', function($scope){
-    	$scope.message = 'Design page!';
-    	this.design = designItems;
+    	$scope.message = 'Design page!';    	
     });
 
     app.controller('projectsController', function($scope){
     	$scope.message = 'Projects page!';
+    	this.design = designItems;
     });
 
 	app.directive('navigation', function(){
@@ -72,14 +72,22 @@
 	var designItems = [
 		{
 			id:'1',
-			name: 'Striped Media',
+			name: 'Striped Media.com',
+			description: 'Ditial marketing agency.',
 			image: 'images/striped.png'
 		},
 		{
 			id:'2',
-			name: 'Plicpad',
+			name: 'Plicpad.com',
+			description: 'Public notepad.',
 			image: 'images/plicpad.png'
 		},
+		{
+			id:'2',
+			name: 'MaxBounty.com',
+			description: 'Performance Marketing Network.',
+			image: 'images/maxbounty.png'
+		}
 	];
 
 })();

@@ -1,3 +1,16 @@
 <div class="right-content-container">
-	<p>{{message}}</p>
+	<div class="tile-container">
+		<a href class="tile" ng-repeat="tile in pCtrl.design">
+			<div class="tile-image" style="background-image:url('{{tile.image}}')"></div>
+			<div class="tile-content">
+				<strong>{{tile.name}}</strong>
+				<p class="pgrey">{{tile.description}}</p>
+			</div>			
+		</a>
+		<div class="tile-formatter"></div>
+		<div class="tile-formatter"></div>
+		<div class="tile-formatter"></div>
+		<div class="tile-formatter"></div>
+		<div class="tile-formatter"></div>
+	</div>
 </div>
