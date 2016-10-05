@@ -1,6 +1,8 @@
 <div class="right-content-container">
+	<p>{{message}}</p>
 	<div class="design-container">
 		<div class="tile" ng-repeat="tile in dCtrl.design">
+			<div class="tile-image" style="background-image:url('{{tile.image}}')"></div>
 			{{tile.name}}
 		</div>
 		<div class="tile-formatter"></div>

@@ -73,12 +73,12 @@
 		{
 			id:'1',
 			name: 'Striped Media',
-			image: 'images/striped.jpg'
+			image: 'images/striped.png'
 		},
 		{
 			id:'2',
 			name: 'Plicpad',
-			image: 'images/plicpad.jpg'
+			image: 'images/plicpad.png'
 		},
 	];
 
