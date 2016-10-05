@@ -2,9 +2,9 @@
 	<section class="logo-container"><img src="images/logo.png"></section>
 	<section class="navigation">
 		<ul>
-			<li><a href="#" ng-click="panel.selectTab(1)" ng-class="{active:panel.isSelected(1)}"><i class="fa fa-circle"></i>Front-end</a></li>
-			<li><a href="#" ng-click="panel.selectTab(2)" ng-class="{active:panel.isSelected(2)}"><i class="fa fa-circle"></i>Design</a></li>
-			<li><a href="#" ng-click="panel.selectTab(3)" ng-class="{active:panel.isSelected(3)}"><i class="fa fa-circle"></i>Projects</a></li>
+			<li ng-repeat="link in panel.linkslist">
+				<a href ng-click="panel.selectTab($index)" ng-class="{active:panel.isSelected($index)}"><i class="fa fa-circle"></i>{{link.name}}</a>
+			</li>
 		</ul>
 	</section>
 </section>

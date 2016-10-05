@@ -6,17 +6,37 @@
 			restrict: 'E',
 			templateUrl: 'templates/navigation.html',
 			controller: function(){
-				this.tab = 1;
+				tab = 0;
+				this.linkslist = links;
 
 				this.selectTab = function(setTab){
-					this.tab = setTab;
+					tab = setTab;
 				};
 				this.isSelected = function(checkTab){
-					return this.tab === checkTab;
+					return tab === checkTab;
 				};
 			},
 			controllerAs: 'panel'
 		}
 	});
+
+	var links = [
+		{
+			id:'0',
+			name:'About'
+		},
+		{
+			id:'1',
+			name:'Front-end'
+		},
+		{
+			id:'2',
+			name:'Design'
+		},
+		{
+			id:'3',
+			name:'Projects'
+		}
+	];
 
 })();
