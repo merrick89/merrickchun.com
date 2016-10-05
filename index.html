@@ -21,7 +21,10 @@
 			<section class="right-container">
 				<section class="right-top flexbox flexbox-middle">
 					<div class="right-top-main">
-						<div ng-repeat="title in panel.linkslist" ng-show="panel.isSelected($index)">{{title.name}}</div>
+						<div ng-show="panel.isSelected(1)">About</div>
+						<div ng-show="panel.isSelected(2)">Front-End</div>
+						<div ng-show="panel.isSelected(3)">Design</div>
+						<div ng-show="panel.isSelected(4)">Projects</div>
 					</div>
 					<div class="social-container">						
 						<a href="https://ca.linkedin.com/in/merrick-chun-cpa-cma-8762124b" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
@@ -30,34 +33,15 @@
 					</div>
 				</section>
 				<section>
-					<div class="right-content-container" ng-show="panel.isSelected(0)">
-						Panel 1
-					</div>
-					<div class="right-content-container" ng-show="panel.isSelected(1)">
-						Panel 2
-					</div>
-					<div class="right-content-container" ng-show="panel.isSelected(2)">
-						<div class="design-container">
-							<div class="design-tile">
-								asdf
-							</div>
-							<div class="design-tile-formatter"></div>
-							<div class="design-tile-formatter"></div>
-							<div class="design-tile-formatter"></div>
-							<div class="design-tile-formatter"></div>
-							<div class="design-tile-formatter"></div>
-						</div>
-					</div>
-					<div class="right-content-container" ng-show="panel.isSelected(3)">
-						Panel 4
-					</div>
+					<div ng-view></div>
 				</section>
 			</section>
 		</div>
 
-		<script type="text/javascript" src="files/angular.min.js"></script>
-		<script type="text/javascript" src="app.js"></script>
-		<script type="text/javascript" src="files/jquery-3.1.1.min.js"></script>		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+		<script type="text/javascript" src="files/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>				
 		<script type="text/javascript" src="files/js.js"></script>
 	</body>
 </html>

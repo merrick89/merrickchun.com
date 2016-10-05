@@ -1,10 +1,11 @@
 <section class="left-nav">
 	<section class="logo-container"><img src="images/logo.png"></section>
 	<section class="navigation">
-		<ul>
-			<li ng-repeat="link in panel.linkslist">
-				<a href ng-click="panel.selectTab($index)" ng-class="{active:panel.isSelected($index)}"><i class="fa fa-circle"></i>{{link.name}}</a>
-			</li>
+		<ul ng-controller="navController">
+			<li><a ng-class="{active:isActive('/')}" href="#/"><i class="fa fa-circle"></i>About</a></li>
+			<li><a ng-class="{active:isActive('/front-end')}" href="#front-end"><i class="fa fa-circle"></i>Front-end</a></li>
+			<li><a ng-class="{active:isActive('/design')}" href="#design"><i class="fa fa-circle"></i>Design</a></li>
+			<li><a ng-class="{active:isActive('/projects')}" href="#projects"><i class="fa fa-circle"></i>Projects</a></li>
 		</ul>
 	</section>
 </section>
