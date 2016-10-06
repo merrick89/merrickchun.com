@@ -37,6 +37,7 @@
             .otherwise({ redirectTo: '/' });
     });
 
+    // Navigation highlighting
 	app.controller('navController', function($scope){
 		$scope.isActive = function (path) {
 			var urlPath = window.location.href;
