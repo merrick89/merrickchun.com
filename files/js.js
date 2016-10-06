@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	//Initialize tooltips
+	$(function () {
+        $("[rel='tooltip']").tooltip();
+    });
+
 	//Animate logo to fade in after 2 second delay
 	$(".app-container").animate({
 		opacity:1

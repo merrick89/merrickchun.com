@@ -203,8 +203,15 @@ h4{
 .bio-image{
 	background-image:url("../images/bio.jpg");
 	background-size:cover;
-	height:300px;
-	width:100%;
+	padding:25px;
+	width:100%;	
+}
+
+.bio-image img{
+	margin:auto;
+	max-width:125px;
+	border-radius:50%;
+	overflow:hidden;
 }
 
 .bio-content{
@@ -230,16 +237,28 @@ h4{
 	color:black;
 }
 
-.action-item-tile:hover{
+a.action-item-tile:hover{
 	text-decoration:none;
 	color:black;
 	box-shadow:0px 1px 1px #79d3d7;
 }
 
-.action-item-tile:focus{
+a.action-item-tile:focus{
 	text-decoration:none;
+	color:black;
 }
 
+.contact-icon{
+	color:white;
+	border:1px solid white;
+	border-radius:50%;
+	padding:10px;
+}
+
+.contact-icon:hover, .contact-icon:focus{
+	background:RGBA(255,255,255,0.2);
+	color:white;
+}
 
 .ng-invalid.ng-dirty{
 	border-color:#FA787E;
