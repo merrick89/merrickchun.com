@@ -1,7 +1,7 @@
 (function(){
 	// Create the module and name it app
 		// include ngRoute for page routing
-	var app = angular.module('merrick', ['ngRoute']);
+	var app = angular.module('merrick', ['ngRoute', 'ngAnimate']);
 
 	//Configure routes
     app.config(function($routeProvider) {
@@ -72,21 +72,24 @@
 	var designItems = [
 		{
 			id:'1',
-			name: 'Striped Media.com',
-			description: 'Ditial marketing agency.',
-			image: 'images/striped.png'
+			name: 'StripedMedia.com',
+			description: 'Digital marketing agency.',
+			image: 'images/striped.png',
+            url: 'http://stripedmedia.com'
 		},
 		{
 			id:'2',
 			name: 'Plicpad.com',
 			description: 'Public notepad.',
-			image: 'images/plicpad.png'
+			image: 'images/plicpad.png',
+            url: 'http://plicpad.com'
 		},
 		{
 			id:'2',
 			name: 'MaxBounty.com',
 			description: 'Performance Marketing Network.',
-			image: 'images/maxbounty.png'
+			image: 'images/maxbounty.png',
+            url: 'https://maxbounty.com'
 		}
 	];
 

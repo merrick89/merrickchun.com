@@ -37,6 +37,11 @@ p{
 	align-items:center;
 }
 
+.flexbox-wrap{
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
 .app-container{
 	border-radius:3px;
 	box-shadow:0px 0px 3px RGBA(0,0,0,0.3);
@@ -149,6 +154,13 @@ p{
 	text-decoration:none;
 	color:initial;
 	color:black;
+	box-shadow:0px 1px 1px #79d3d7;
+}
+
+.tile:active{
+	text-decoration:none;
+	color:initial;
+	color:black;
 }
 
 .tile-image{
@@ -173,6 +185,16 @@ p{
 
 .ng-valid.ng-dirty{
 	border-color:#78FA89;
+}
+
+.ng-enter{
+	-webkit-transition:1s;
+	transition:1s;
+	opacity:0;
+}
+
+.ng-enter-active{
+	opacity:1;
 }
 
 .typed-cursor{

@@ -1,12 +1,18 @@
 <div class="right-content-container">
-	<div class="tile-container">
-		<a href class="tile" ng-repeat="tile in pCtrl.design">
+	<div class="tile-container flexbox-wrap">
+		<a target="_blank" href="{{tile.url}}" class="tile" ng-repeat="tile in pCtrl.design">
 			<div class="tile-image" style="background-image:url('{{tile.image}}')"></div>
-			<div class="tile-content">
-				<strong>{{tile.name}}</strong>
-				<p class="pgrey">{{tile.description}}</p>
+			<div class="tile-content flexbox flexbox-middle">
+				<div style="flex:1; -webkit-flex:1;">
+					<strong>{{tile.name}}</strong>
+					<p class="pgrey">{{tile.description}}</p>
+				</div>
+				<div>
+					<i class="fa fa-external-link pgrey"></i>
+				</div>
 			</div>			
 		</a>
+		<div class="tile-formatter"></div>
 		<div class="tile-formatter"></div>
 		<div class="tile-formatter"></div>
 		<div class="tile-formatter"></div>
